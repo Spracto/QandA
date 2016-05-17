@@ -1,0 +1,25 @@
+<div class='pollsHeader'>
+  <button class='btn btn-link pull-right' ng-click='logout()'>Log Out</button><a class='btn btn-link pull-right' href='#/createPoll'>Create a New Poll</a>
+</div>
+<p class='pollsText'>Current Polls:</p>
+<div class='form-group pollsSearch pull-right'>
+  <input type='text' class='form-control' placeholder='search'/>
+</div>
+<table class='table table-striped pollsTable'>
+  <thead>
+    <tr>
+      <td>Name</td>
+      <td>Survey Question</td>
+      <td>Date Posted</td>
+      <td>Action</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat='poll in polls'>
+      <td>{{poll.userName}}</td>
+      <td><a href='#/vote/{{poll._id}}'>{{poll.question}}</a></td>
+      <td>{{poll.createdAt | date: 'MMMM d yyyy' }}</td>
+      <td><button ng-if='poll.delete' class='btn btn-link'>Delete</button></td>
+    </tr>
+  </tbody>
+</table>

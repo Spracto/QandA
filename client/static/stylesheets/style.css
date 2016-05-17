@@ -1,0 +1,34 @@
+
+.nameInput{
+  margin-top: 100px;
+  width: 25%;
+}
+.pollsHeader{
+  height: 100px;
+  width: 100%;
+  padding-top: 25px;
+  margin-bottom: 60px;
+  /*border: 5px solid white;*/
+}
+.pollsText{
+  font-weight: bold;
+}
+.pollsTable{
+  margin-left: 25px;
+  margin-top: 35px;
+}
+.pollsSearch{
+  width: 25%;
+}
+.createPollQuestionInput{
+  width: 65%;
+}
+.createPollOptionInput{
+  width: 35%;
+}
+.createPollHeader{
+  margin-bottom: 10px;
+  width: 100%;
+  height: 75px;
+  padding-top: 10px;
+}

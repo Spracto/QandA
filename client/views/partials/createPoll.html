@@ -1,0 +1,25 @@
+<div class='createPollHeader'>
+  <a href="#/polls" class='btn btn-link pull-right'>Cancel</a>
+</div>
+<p class='createPollHeaderText'>Put the Question and the options here:</p>
+<div class='form-group createPollQuestionInput'>
+  <label>Question</label>
+  <input class='form-control' type='text' ng-model='poll.question' required/>
+</div>
+<div class='form-group createPollOptionInput'>
+  <label>Option 1:</label>
+  <input class='form-control' type='text' ng-model='poll.option1' required/>
+</div>
+<div class='form-group createPollOptionInput'>
+  <label>Option 2:</label>
+  <input class='form-control' type='text' ng-model='poll.option2' required/>
+</div>
+<div class='form-group createPollOptionInput'>
+  <label>Option 3:</label>
+  <input class='form-control' type='text' ng-model='poll.option3' required/>
+</div>
+<div class='form-group createPollOptionInput'>
+  <label>Option 4:</label>
+  <input class='form-control' type='text' ng-model='poll.option4' required/>
+</div>
+<button class='btn btn-primary col-md-offset-7' ng-click=createPoll(poll)>Create Poll</button>

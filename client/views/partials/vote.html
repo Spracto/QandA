@@ -1,0 +1,34 @@
+<a class='btn btn-link pull-right' href='#/polls'>Go to Polls</a>
+<h4>{{poll.question}}</h4>
+<h5>Click the vote button to choose one</h5>
+<table class='table table-striped'>
+  <thead>
+    <tr>
+      <td>Option</td>
+      <td>Current number of votes</td>
+      <td>Action</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{poll.option1.description}}</td>
+      <td>{{poll.option1.votes}}</td>
+      <td><button class='btn btn-primary' ng-click='vote(poll.option1, poll._id)'>Vote</button></td>
+    </tr>
+    <tr>
+      <td>{{poll.option2.description}}</td>
+      <td>{{poll.option2.votes}}</td>
+      <td><button class='btn btn-primary' ng-click='vote(poll.option2, poll._id)'>Vote</button></td>
+    </tr>
+    <tr>
+      <td>{{poll.option3.description}}</td>
+      <td>{{poll.option3.votes}}</td>
+      <td><button class='btn btn-primary' ng-click='vote(poll.option3, poll._id)'>Vote</button></td>
+    </tr>
+    <tr>
+      <td>{{poll.option4.description}}</td>
+      <td>{{poll.option4.votes}}</td>
+      <td><button class='btn btn-primary' ng-click='vote(poll.option4, poll._id)'>Vote</button></td>
+    </tr>
+  </tbody>
+</table>
