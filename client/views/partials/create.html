@@ -1,0 +1,12 @@
+<a href='#/home'>Home</a>
+<button class='btn btn-link'>Logout</button>
+<h1>New Question</h1>
+<div class='questionInput form-inline'>
+  <label>Question</label>
+  <p ng-if='errors'>Please provide a longer question!</p>
+  <textarea class='form-control' ng-model='question.question'></textarea></p>
+  <label>Description</label>
+  <textarea class='form-control' ng-model='question.description'></textarea></p>
+  <button class='btn btn-primary col-xs-4' ng-click='cancel()'>Cancel</button>
+  <button class='btn btn-success col-xs-4' ng-click='addQuestion(question)'>Submit</button>
+</div>

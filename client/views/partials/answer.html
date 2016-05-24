@@ -1,0 +1,10 @@
+<a href='#/home'>Home</a> | <a href="#/question/{{displayQuestion._id}}">Go back to question</a> <button class='btn btn-link' ng-click='logout()'>Logout</button>
+<h1>{{displayQuestion.question}}</h1>
+<h5>{{displayQuestion.description}}</h5>
+<label>Your Answer</label>
+<p ng-if='errors'>Please provide more than 5 characters for the answer!</p>
+<textarea class='form-control' ng-model='answer.answer'></textarea></p>
+<label>Supporting details</label>
+<textarea class='form-control' ng-model='answer.description'></textarea>
+<button class='btn btn-success pull-right' ng-click='addAnswer(answer)'>Submit</button>
+<button class='btn btn-primary pull-right' ng-click='cancel()'>Cancel</button>

@@ -1,34 +1,53 @@
-
 .nameInput{
-  margin-top: 100px;
-  width: 25%;
+  /*width: 75%;*/
+  height: 200px;
 }
-.pollsHeader{
-  height: 100px;
-  width: 100%;
-  padding-top: 25px;
-  margin-bottom: 60px;
-  /*border: 5px solid white;*/
+.loginInput{
+  width: 38%;
+  display: inline-block;
 }
-.pollsText{
-  font-weight: bold;
+.header{
+  height: 50px;
+  width: auto;
+  /*background-color: blue;*/
 }
-.pollsTable{
-  margin-left: 25px;
-  margin-top: 35px;
+.title{
+  font-size: 39px;
+  display: inline-block;
+  margin-right: 50px;
 }
-.pollsSearch{
-  width: 25%;
+/*.header, a{
+  font-size: 19px;
+  vertical-align: top;
+  margin-top: 10px
+}*/
+.logoutButton{
+  font-size: 29px;
+  margin-top: 40px;
+  /*padding-top: 50px;*/
 }
-.createPollQuestionInput{
-  width: 65%;
+.linkContainer{
+  height: 70px;
+  width: 190px;
+  display: inline-block;
+  text-align: center;
 }
-.createPollOptionInput{
-  width: 35%;
+.mainDashContent{
+  margin-top: 25px;
 }
-.createPollHeader{
-  margin-bottom: 10px;
-  width: 100%;
-  height: 75px;
-  padding-top: 10px;
+.logoutLink{
+  margin-top: 15px;
+}
+.questionLink{
+  font-size: 20px;
+}
+.homeSearch{
+  width: 30%;
+  margin-top: 50px;
+}
+.questionInput{
+  width: 40%;
+}
+textarea{
+  resize: none;
 }

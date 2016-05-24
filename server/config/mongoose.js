@@ -4,7 +4,7 @@ var fs = require('fs');
 
 var path = require('path');
 
-mongoose.connect("mongodb://localhost/blackBelt")
+mongoose.connect("mongodb://localhost/meanBlackBelt")
 
 var models_path = path.join(__dirname, './../models');
 
